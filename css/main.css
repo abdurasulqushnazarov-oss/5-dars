@@ -206,9 +206,70 @@ header {
   font-weight: 400;
 }
 
+.about {
+  background: #fff4d8;
+  padding: 82px 0;
+}
+
+.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 554px;
+  h2 {
+    font-family: "Lobster";
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 33px;
+    line-height: 50px;
+    letter-spacing: -0.33px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.33px;
+    font-weight: 400;
+    margin-bottom: 33px;
+  }
+}
+
+.img-two {
+  display: none;
+}
+
+.about-img {
+  width: 643px;
+}
+
+.btn {
+  padding: 20px 30px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .title {
     font-size: 80px;
+  }
+
+  /* about qismi */
+  .about-img {
+    width: 500px;
+  }
+
+  .about-img img {
+    width: 500px;
+  }
+
+  .about-text {
+    width: 450px;
   }
 }
 
@@ -226,6 +287,20 @@ header {
   .title {
     font-size: 70px;
   }
+
+  /* about qismi */
+
+  .about-img {
+    width: 450px;
+  }
+
+  .about-img img {
+    width: 450px;
+  }
+
+  .about-text {
+    width: 400px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -239,14 +314,57 @@ header {
   .title {
     font-size: 60px;
   }
+
+  /* about qismi */
+
+  .about-text {
+    width: 100%;
+  }
+
+  .img-two {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .about-img {
+    display: none;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 468px) {
   header {
     background-image: url("../imgs/png/backround-mobile.png");
   }
 
   .title {
     font-size: 50px;
+  }
+
+  /* abut qismi */
+
+  .about-text {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  .img-two {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .about-img {
+    display: none;
   }
 }
