@@ -144,12 +144,23 @@ header {
   width: 100%;
   max-width: 1452px;
   margin: 0 auto;
+  padding: 20px;
 }
 .sitenav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+}
+
+.link-bar {
+  display: none;
+}
+
 .site-links {
   display: flex;
   align-items: center;
@@ -171,4 +182,31 @@ header {
   display: flex;
   align-items: center;
   gap: 26px;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 160px;
+    height: 75px;
+  }
+
+  .site-icon a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-links {
+    display: none;
+  }
+  .link-bar {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    background-image: url("../imgs/png/backround-mobile.png");
+  }
 }
