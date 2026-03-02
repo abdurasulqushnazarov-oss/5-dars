@@ -254,6 +254,162 @@ header {
   border-radius: 10px;
 }
 
+.btn:hover {
+  background-color: red;
+  border: red;
+  color: white;
+}
+
+.offers {
+  background: #4b2e1e;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  h2 {
+    font-family: "Lobster";
+    color: #fff4d8;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 33px;
+  }
+}
+
+.offer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.offer {
+  width: 287px;
+
+  h3 {
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff4d8;
+    font-weight: 600;
+    margin-bottom: 31px;
+  }
+  p {
+    color: #fff4d8;
+  }
+}
+
+.offer-icon img {
+  width: 150px;
+  margin-bottom: 19px;
+}
+
+/* menu */
+
+/* Section */
+.menu {
+  background: #fff4d8;
+  padding: 70px 0;
+}
+
+/* Top */
+.menu-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.menu-title {
+  font-family: "Lobster";
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.menu-btn {
+  display: flex;
+  cursor: pointer;
+  justify-content: right;
+  margin-bottom: 21px;
+}
+
+/* Cards */
+.menu-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 23px;
+  max-width: 444px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+}
+
+.card-star {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  span {
+    color: #555555;
+  }
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+  background: orange;
+  display: inline-block;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.card-bottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-money {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid orange;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f39c11;
+}
+
+.cart-icon {
+  width: 16px;
+  height: 16px;
+  background: orange;
+  display: inline-block;
+}
+
 @media (max-width: 1200px) {
   .title {
     font-size: 80px;
@@ -301,6 +457,37 @@ header {
   .about-text {
     width: 400px;
   }
+
+  /* offer */
+  .offer-icon img {
+    width: 100px;
+  }
+
+  .offer {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-size: 30px;
+      line-height: 35px;
+      color: #fff4d8;
+      font-weight: 600;
+    }
+    p {
+      color: #fff4d8;
+      font-size: 15px;
+    }
+  }
+
+  .card {
+    max-width: 338px;
+    padding: 17px;
+  }
+  .card-money {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -330,6 +517,32 @@ header {
 
   .about-img {
     display: none;
+  }
+
+  /* offer */
+  .offer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer {
+    width: 346px;
+    border-bottom: 1px solid #fff4d8;
+    p {
+      margin-bottom: 31px;
+    }
+  }
+
+  .menu-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 350px;
+    padding: 18px;
   }
 }
 
